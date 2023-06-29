@@ -1,0 +1,23 @@
+.PHONY = clean
+
+CC = gcc # compiler desired
+
+mega:
+    pwd
+    echo "Howdy"
+
+super:
+    ls -la
+
+ultra:
+    cd VVCSoftware_VTM/
+
+more:
+    echo "Hello"
+    pwd
+        
+cyeah: subtracao.c
+    ${CC} subtracao.c -o subtracao.o
+        
+clean:
+    rm -rf *.o
